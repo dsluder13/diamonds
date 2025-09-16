@@ -1,0 +1,12 @@
+---
+title: "Diamonds Plot"
+format: html
+editor: visual
+---
+
+```{r}
+library(ggplot2)
+diamonds |>
+  ggplot(aes(x = depth, y = carat, color = cut)) +
+  geom_point()
+```
